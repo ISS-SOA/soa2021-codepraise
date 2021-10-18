@@ -3,12 +3,21 @@ GEM
   specs:
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    ast (2.4.2)
+    crack (0.4.5)
+      rexml
+    docile (1.4.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     ffi (1.15.4)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
+    flog (4.6.4)
+      path_expander (~> 1.0)
+      ruby_parser (~> 3.1, > 3.1.0)
+      sexp_processor (~> 4.8)
+    hashdiff (1.0.1)
     http (5.0.4)
       addressable (~> 2.8)
       http-cookie (~> 1.0)
@@ -17,25 +26,71 @@ GEM
     http-cookie (1.0.4)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
+    kwalify (0.7.2)
     llhttp-ffi (0.4.0)
       ffi-compiler (~> 1.0)
       rake (~> 13.0)
     minitest (5.14.4)
     minitest-rg (5.2.0)
       minitest (~> 5.0)
+    parallel (1.21.0)
+    parser (3.0.2.0)
+      ast (~> 2.4.1)
+    path_expander (1.1.0)
     public_suffix (4.0.6)
+    rainbow (3.0.0)
     rake (13.0.6)
+    reek (6.0.6)
+      kwalify (~> 0.7.0)
+      parser (~> 3.0.0)
+      rainbow (>= 2.0, < 4.0)
+    regexp_parser (2.1.1)
+    rexml (3.2.5)
+    rubocop (1.22.1)
+      parallel (~> 1.10)
+      parser (>= 3.0.0.0)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml
+      rubocop-ast (>= 1.12.0, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 3.0)
+    rubocop-ast (1.12.0)
+      parser (>= 3.0.1.1)
+    ruby-progressbar (1.11.0)
+    ruby_parser (3.17.0)
+      sexp_processor (~> 4.15, >= 4.15.1)
+    sexp_processor (4.15.3)
+    simplecov (0.21.2)
+      docile (~> 1.1)
+      simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
+    simplecov-html (0.12.3)
+    simplecov_json_formatter (0.1.3)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8)
+    unicode-display_width (2.1.0)
+    vcr (6.0.0)
+    webmock (3.14.0)
+      addressable (>= 2.8.0)
+      crack (>= 0.3.2)
+      hashdiff (>= 0.4.0, < 2.0.0)
 
 PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
+  flog
   http (~> 5.0)
   minitest (~> 5.0)
-  minitest-rg
+  minitest-rg (~> 5.0)
+  rake
+  reek
+  rubocop
+  simplecov (~> 0)
+  vcr (~> 6.0)
+  webmock (~> 3.0)
 
 BUNDLED WITH
    2.2.22
