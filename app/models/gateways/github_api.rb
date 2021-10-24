@@ -7,15 +7,15 @@ module CodePraise
     # Library for Github Web API
     class Api
       def initialize(token)
-        @GITHUB_TOKEN = token
+        @gh_token = token
       end
 
       def repo_data(username, project_name)
-        Request.new(@GITHUB_TOKEN).repo(username, project_name).parse
+        Request.new(@gh_token).repo(username, project_name).parse
       end
 
       def contributors_data(contributors_url)
-        Request.new(@GITHUB_TOKEN).get(contributors_url).parse
+        Request.new(@gh_token).get(contributors_url).parse
       end
 
       # Sends out HTTP requests to Github
@@ -53,7 +53,7 @@ module CodePraise
         }.freeze
 
         def successful?
-          HTTP_ERROR.keys.include?(code) ? false : true
+          !HTTP_ERROR.keys.include?(code)
         end
 
         def error

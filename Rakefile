@@ -2,8 +2,6 @@
 
 require 'rake/testtask'
 
-CODE = 'lib/'
-
 task :default do
   puts `rake -T`
 end
@@ -18,6 +16,10 @@ task :respec do
   sh "rerun -c 'rake spec' --ignore 'coverage/*'"
 end
 
+task :rerack do
+  sh "rerun -c rackup --ignore 'coverage/*'"
+end
+
 namespace :vcr do
   desc 'delete cassette fixtures'
   task :wipe do
@@ -28,6 +30,8 @@ namespace :vcr do
 end
 
 namespace :quality do
+  only_app = 'config/ app/'
+
   desc 'run all static-analysis quality checks'
   task all: %i[rubocop reek flog]
 
@@ -43,6 +47,6 @@ namespace :quality do
 
   desc 'complexiy analysis'
   task :flog do
-    sh "flog #{CODE}"
+    sh "flog -m #{only_app}"
   end
 end
