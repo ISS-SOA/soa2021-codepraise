@@ -10,7 +10,7 @@ require 'minitest/rg'
 require 'vcr'
 require 'webmock'
 
-require_relative '../lib/github_api'
+require_relative '../init'
 
 USERNAME = 'soumyaray'
 PROJECT_NAME = 'YPBT-app'

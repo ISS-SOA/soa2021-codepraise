@@ -313,4 +313,75 @@ http_interactions:
       encoding: UTF-8
       string: '[{"login":"Yuan-Yu","id":8809778,"node_id":"MDQ6VXNlcjg4MDk3Nzg=","avatar_url":"https://avatars.githubusercontent.com/u/8809778?v=4","gravatar_id":"","url":"https://api.github.com/users/Yuan-Yu","html_url":"https://github.com/Yuan-Yu","followers_url":"https://api.github.com/users/Yuan-Yu/followers","following_url":"https://api.github.com/users/Yuan-Yu/following{/other_user}","gists_url":"https://api.github.com/users/Yuan-Yu/gists{/gist_id}","starred_url":"https://api.github.com/users/Yuan-Yu/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Yuan-Yu/subscriptions","organizations_url":"https://api.github.com/users/Yuan-Yu/orgs","repos_url":"https://api.github.com/users/Yuan-Yu/repos","events_url":"https://api.github.com/users/Yuan-Yu/events{/privacy}","received_events_url":"https://api.github.com/users/Yuan-Yu/received_events","type":"User","site_admin":false,"contributions":48},{"login":"SOA-KunLin","id":22166763,"node_id":"MDQ6VXNlcjIyMTY2NzYz","avatar_url":"https://avatars.githubusercontent.com/u/22166763?v=4","gravatar_id":"","url":"https://api.github.com/users/SOA-KunLin","html_url":"https://github.com/SOA-KunLin","followers_url":"https://api.github.com/users/SOA-KunLin/followers","following_url":"https://api.github.com/users/SOA-KunLin/following{/other_user}","gists_url":"https://api.github.com/users/SOA-KunLin/gists{/gist_id}","starred_url":"https://api.github.com/users/SOA-KunLin/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/SOA-KunLin/subscriptions","organizations_url":"https://api.github.com/users/SOA-KunLin/orgs","repos_url":"https://api.github.com/users/SOA-KunLin/repos","events_url":"https://api.github.com/users/SOA-KunLin/events{/privacy}","received_events_url":"https://api.github.com/users/SOA-KunLin/received_events","type":"User","site_admin":false,"contributions":40},{"login":"luyimin","id":17100800,"node_id":"MDQ6VXNlcjE3MTAwODAw","avatar_url":"https://avatars.githubusercontent.com/u/17100800?v=4","gravatar_id":"","url":"https://api.github.com/users/luyimin","html_url":"https://github.com/luyimin","followers_url":"https://api.github.com/users/luyimin/followers","following_url":"https://api.github.com/users/luyimin/following{/other_user}","gists_url":"https://api.github.com/users/luyimin/gists{/gist_id}","starred_url":"https://api.github.com/users/luyimin/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/luyimin/subscriptions","organizations_url":"https://api.github.com/users/luyimin/orgs","repos_url":"https://api.github.com/users/luyimin/repos","events_url":"https://api.github.com/users/luyimin/events{/privacy}","received_events_url":"https://api.github.com/users/luyimin/received_events","type":"User","site_admin":false,"contributions":21}]'
   recorded_at: Mon, 18 Oct 2021 01:14:00 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/soumyaray/YPBT-app
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      Authorization:
+      - token BAD_TOKEN
+      Connection:
+      - close
+      Host:
+      - api.github.com
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sun, 24 Oct 2021 04:42:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '80'
+      X-Github-Media-Type:
+      - github.v3; format=json
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '59'
+      X-Ratelimit-Reset:
+      - '1635054126'
+      X-Ratelimit-Used:
+      - '1'
+      X-Ratelimit-Resource:
+      - core
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes,
+        X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation,
+        Sunset
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      Vary:
+      - Accept-Encoding, Accept, X-Requested-With
+      X-Github-Request-Id:
+      - DF90:58FF:4B98B1:576495:6174E41E
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}'
+  recorded_at: Sun, 24 Oct 2021 04:42:06 GMT
 recorded_with: VCR 6.0.0
