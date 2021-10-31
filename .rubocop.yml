@@ -8,10 +8,14 @@ AllCops:
   Include:
   - 'Gemfile'
   - 'Rakefile'
-
+  - '**/*.rb'
 
 # ignore block length in test code only
 Metrics/BlockLength:
   Enabled: true
   Exclude:
     - 'spec/**/*'
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: true
+  EnforcedStyle: indented
