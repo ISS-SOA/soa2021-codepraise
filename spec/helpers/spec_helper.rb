@@ -12,7 +12,7 @@ require 'minitest/rg'
 require 'vcr'
 require 'webmock'
 
-require_relative '../init'
+require_relative '../../init'
 
 USERNAME = 'soumyaray'
 PROJECT_NAME = 'YPBT-app'
