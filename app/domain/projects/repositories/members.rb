@@ -16,10 +16,10 @@ module CodePraise
         return nil unless db_record
 
         Entity::Member.new(
-          id:        db_record.id,
+          id: db_record.id,
           origin_id: db_record.origin_id,
-          username:  db_record.username,
-          email:     db_record.email
+          username: db_record.username,
+          email: db_record.email
         )
       end
 
@@ -29,7 +29,7 @@ module CodePraise
         end
       end
 
-      def self.db_find_or_create(entity)
+      def self.find_or_create(entity)
         Database::MemberOrm.find_or_create(entity.to_attr_hash)
       end
     end

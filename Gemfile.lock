@@ -72,6 +72,7 @@ GEM
     parser (3.0.2.0)
       ast (~> 2.4.1)
     path_expander (1.1.0)
+    pg (1.2.3)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -135,6 +136,7 @@ DEPENDENCIES
   http (~> 5.0)
   minitest (~> 5.0)
   minitest-rg (~> 5.0)
+  pg
   pry
   puma (~> 5.5)
   rake
@@ -148,6 +150,9 @@ DEPENDENCIES
   sqlite3 (~> 1.4)
   vcr (~> 6.0)
   webmock (~> 3.0)
+
+RUBY VERSION
+   ruby 3.0.2p107
 
 BUNDLED WITH
    2.2.22
