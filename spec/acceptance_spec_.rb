@@ -114,7 +114,6 @@ describe 'Acceptance Tests' do
 
   describe 'Project Page' do
     it '(HAPPY) should see project content if project exists' do
-
       # GIVEN: a project exists
       project = CodePraise::Github::ProjectMapper
         .new(GITHUB_TOKEN)
@@ -137,7 +136,6 @@ describe 'Acceptance Tests' do
 
       _(contributor_columns.map(&:text).sort)
         .must_equal ['SOA-KunLin', 'Yuan-Yu', 'luyimin']
-
 
       folder_rows = @browser.table(id: 'contribution_table').trs.select do |row|
         row.td(class: %w[folder name]).present?

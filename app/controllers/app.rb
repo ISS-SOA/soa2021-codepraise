@@ -73,8 +73,8 @@ module CodePraise
               # Add project to database
               begin
                 Repository::For.entity(project).create(project)
-              rescue StandardError => error
-                puts error.backtrace.join("\n")
+              rescue StandardError => err
+                puts err.backtrace.join("\n")
                 flash[:error] = 'Having trouble accessing the database'
               end
             end

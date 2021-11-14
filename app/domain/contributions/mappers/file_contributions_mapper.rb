@@ -38,6 +38,7 @@ module CodePraise
       end
     end
 
+    # Analyzes contributions to a single line of code
     class LineContribution
       def initialize(line_report, line_index, language)
         @line_report = line_report
