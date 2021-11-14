@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-require_relative 'helpers/spec_helper'
-require_relative 'helpers/database_helper'
-require_relative 'helpers/vcr_helper'
+require_relative '../../helpers/spec_helper'
+require_relative '../../helpers/database_helper'
+require_relative '../../helpers/vcr_helper'
+
 # require 'headless'
 require 'webdrivers/chromedriver'
 require 'watir'

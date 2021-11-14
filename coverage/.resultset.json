@@ -492,6 +492,7 @@
           null,
           1,
           0,
+          null,
           0,
           null,
           null,
@@ -1057,6 +1058,7 @@
           1,
           65,
           1730,
+          null,
           null,
           null,
           null,
@@ -2020,7 +2022,7 @@
           null
         ]
       },
-      "/Users/soumyaray/Sync/Dropbox/ossdev/classes/SOA-class/projects/soa2021/codepraise2021/spec/gateway_database_spec.rb": {
+      "/Users/soumyaray/Sync/Dropbox/ossdev/classes/SOA-class/projects/soa2021/codepraise2021/spec/tests/integration/gateway_database_spec.rb": {
         "lines": [
           null,
           null,
@@ -2071,38 +2073,7 @@
           null
         ]
       },
-      "/Users/soumyaray/Sync/Dropbox/ossdev/classes/SOA-class/projects/soa2021/codepraise2021/spec/gateway_git_spec.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/soumyaray/Sync/Dropbox/ossdev/classes/SOA-class/projects/soa2021/codepraise2021/spec/gateway_github_spec.rb": {
+      "/Users/soumyaray/Sync/Dropbox/ossdev/classes/SOA-class/projects/soa2021/codepraise2021/spec/tests/integration/github_spec.rb": {
         "lines": [
           null,
           null,
@@ -2174,8 +2145,39 @@
           null,
           null
         ]
+      },
+      "/Users/soumyaray/Sync/Dropbox/ossdev/classes/SOA-class/projects/soa2021/codepraise2021/spec/tests/unit/gateway_git_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1636878948
+    "timestamp": 1636975493
   }
 }
