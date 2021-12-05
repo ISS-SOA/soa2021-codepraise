@@ -3,7 +3,7 @@
 require 'roda'
 require 'slim'
 require 'slim/include'
-require_relative 'helpers.rb'
+require_relative 'helpers'
 
 module CodePraise
   # Web App
@@ -33,7 +33,7 @@ module CodePraise
           flash[:error] = result.failure
           viewable_projects = []
         else
-          projects = result.value!
+          projects = result.value!.projects
           if projects.none?
             flash.now[:notice] = 'Add a Github project to get started'
           end
