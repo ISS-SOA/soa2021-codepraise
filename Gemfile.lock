@@ -10,6 +10,7 @@ GEM
     data_magic (1.2)
       faker (>= 1.1.2)
       yml_reader (>= 0.6)
+    declarative (0.0.20)
     docile (1.4.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
@@ -92,6 +93,7 @@ GEM
     minitest (5.14.4)
     minitest-rg (5.2.0)
       minitest (~> 5.0)
+    multi_json (1.15.0)
     nio4r (2.5.8)
     nokogiri (1.12.5-x86_64-darwin)
       racc (~> 1.4)
@@ -123,9 +125,15 @@ GEM
       parser (~> 3.0.0)
       rainbow (>= 2.0, < 4.0)
     regexp_parser (2.1.1)
+    representable (3.1.1)
+      declarative (< 0.1.0)
+      trailblazer-option (>= 0.1.1, < 0.2.0)
+      uber (< 0.2.0)
     rerun (0.13.1)
       listen (~> 3.0)
     rexml (3.2.5)
+    roar (1.1.1)
+      representable (~> 3.0)
     roda (3.49.0)
       rack
     rubocop (0.7.2)
@@ -150,6 +158,8 @@ GEM
     temple (0.8.2)
     thor (1.1.0)
     tilt (2.0.10)
+    trailblazer-option (0.1.2)
+    uber (0.1.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8)
@@ -176,6 +186,7 @@ DEPENDENCIES
   http (~> 5.0)
   minitest (~> 5.0)
   minitest-rg (~> 5.0)
+  multi_json
   page-object (~> 2.3)
   pry
   puma (~> 5.5)
@@ -183,6 +194,7 @@ DEPENDENCIES
   rake (~> 13.0)
   reek
   rerun (~> 0)
+  roar
   roda (~> 3.49)
   rubocop
   simplecov (~> 0)
