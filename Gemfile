@@ -21,6 +21,10 @@ gem 'dry-monads', '~> 1.4'
 gem 'dry-transaction', '~> 0.13'
 gem 'dry-validation', '~> 1.7'
 
+# Representers
+gem 'multi_json'
+gem 'roar'
+
 # INFRASTRUCTURE LAYER
 # Networking
 gem 'http', '~> 5.0'
