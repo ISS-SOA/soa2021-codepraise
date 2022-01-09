@@ -29,7 +29,7 @@ module CodePraise
 
         result.success? ? Success(result.payload) : Failure(result.message)
       rescue StandardError => e
-        puts e.inspect + '\n' + e.backtrace
+        puts e.inspect + '\n' + e.backtrace.to_s
         Failure('Cannot add projects right now; please try again later')
       end
 
